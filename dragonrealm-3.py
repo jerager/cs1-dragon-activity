@@ -65,7 +65,7 @@ def choosecave():
     return cave
 
 def randomcave():
-    cavenumber = random.randint(1, 2)
+    cavenumber = random.randint(1, 3)
     return cavenumber
 
 
