@@ -13,8 +13,10 @@ def main():
         loot = friendly(loot)
     elif(cavenumber == 2):
         loot= dangerouscave(loot)
-    elif(cavenumber == 2):
+    elif(cavenumber == 3):
         loot= waterlesscave(loot)
+    elif(cavenumber == 4):
+        loot= midas(loot)
     elif(cavenumber == -1):
         print("What! Quiting? No guts! No glory!")
     else:
@@ -35,6 +37,17 @@ def friendly(loot):
     #remove before turning in 
     print ("and you now have " + str(loot)+ " gold coins!")
     return(loot)
+
+def midas(loot):
+    #cavenumber == 4
+    print("You have encountered...")
+    time.sleep(3)
+    print("...the friendly dragon!")
+    print("She has given you treasure!")
+    loot= loot + 10
+    #remove before turning in 
+    print ("and you now have " + str(loot)+ " gold coins!")
+    return(25)
 
 def dangerouscave(loot):
     #cavenumber=2
@@ -86,7 +99,7 @@ def choosecave():
     return cave
 
 def randomcave():
-    cavenumber = random.randint(1, 3)
+    cavenumber = random.randint(1, 4)
     return cavenumber
 
 
