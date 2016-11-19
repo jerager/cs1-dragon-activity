@@ -24,6 +24,11 @@ def main():
         print("you now have " + str(loot) + " gold coins!")
     else:
         print("sorry that you died in the game!")
+
+def veryFriendly(loot):
+    print("in a very friendly cave")
+    loot = loot + 50
+    return loot
                 
 def friendly(loot):
     #cavenumber == 1
@@ -86,11 +91,7 @@ def choosecave():
     return cave
 
 def randomcave():
-<<<<<<< HEAD
-    cavenumber = random.randint(1, 3)
-=======
     cavenumber = random.randint(1, 3)
->>>>>>> 875afe3dfacb684ff56daa9ca989d5a1d5c36ca9
     return cavenumber
 
 
