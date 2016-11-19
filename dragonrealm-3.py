@@ -99,7 +99,8 @@ def choosecave():
     return cave
 
 def randomcave():
-    cavenumber = random.randint(1, 4)
+    cavenumber = random.randint(1, 5)
+
     return cavenumber
 
 
